@@ -1,0 +1,66 @@
+/* General styles */
+body {
+    font-family: 'Manrope', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    background-image: url(../img/vegetables-set-left-black-slate.jpg);
+}
+header {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+nav > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+/*displaying inline block*/
+nav > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+nav > li > a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+}
+main > section > h3 {
+    font-size: 27px;
+    text-align: center;
+}
+main > section > p {
+    color: aliceblue;
+    text-align: center;
+}
+/* Grid layout styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.item {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+}
+.item img {
+    max-width: 100%;
+    height: auto;
+}
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: darkgray;
+    color: white;
+    padding: 10px;
+}
+footer h5, footer h6 {
+    margin: 5px;
+}

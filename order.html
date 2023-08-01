@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <!--meta data goes here-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Assignment_2</title>
+    <meta name="description" content="Lab-9 Bootstrap">
+    <meta name="robots" content="noindex, nofollow">
+    <!--font goes here-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital@0;1&family=Manrope&display=swap" rel="stylesheet">
+    <!--jquery goes here-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--js goes here-->
+    <script type="text/javascript" src="./js/script2.js"></script>
+    <!--css goes here-->
+    <link rel="stylesheet" href="./css/styles2.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <!--linking the first page with second page-->
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">order</a></li>
+                </ul>
+            </nav>
+        </header>
+    <h1>Order Information</h1>
+    <!--form starts here-->
+    <form action="form.php" method="post">
+        <section class="form1">
+            <!--radio for size of the pizza-->
+             <div class="bullets">Pizza Size</div>
+             <label>
+                <input type="radio" name="size" value="small" required>
+                Small 6in
+            </label>
+            <label>
+                <input type="radio" name="size" value="medium">
+                Medium 8in
+            </label>
+            <label>
+                <input type="radio" name="size" value="large">
+                Large 12in
+            </label>
+            <label>
+                <input type="radio" name="size" value="Xlarge">
+                 X-Large 18in
+            </label>
+        </section>
+        <section>
+            <!--checkbox for addtitional toppings on pizza-->
+            <div class="bullets">Additional Toppings</div>
+            <label>
+                <input type="checkbox" name="topping[]" value="pepperoni">Pepperoni</label>
+            <label>
+                <input type="checkbox" name="topping[]" value="mushrooms">
+            Pineapple
+            </label>
+            <label>
+                 <input type="checkbox" name="topping[]" value="mushrooms">
+            Grilled Lamb 
+            </label>
+            <label>
+                 <input type="checkbox" name="topping[]" value="onions">
+            Onions
+            </label>
+            <label>
+                 <input type="checkbox" name="topping[]" value="sausage">
+            Beef Roast
+           </label>
+       </section>
+    <section>
+        <!--radio for crust type-->
+       <div class="bullets">Crust Prefernce</div>
+       <label>
+            <input type="radio" name="crust_type" value="thin" required>
+       Thin Crust
+       </label>
+       <label>
+             <input type="radio" name="crust_type" value="thick">
+       Thick Crust
+       </label>
+       <label>
+             <input type="radio" name="crust_type" value="stuffed">
+       Cheese burst 
+       </label>
+    </section>
+       <label>
+        <!--number input for quantity of pizzas-->
+       Number of Pizzas:
+       <input type="number" name="quantity" min="1" value="1" required>
+       </label>
+       <label>
+       Address:
+       <!--text for address-->
+       <input type="text" name="address" required>
+       </label>
+       <label>
+       Phone Number:
+       <!--tel input for phone number-->
+       <input type="tel" name="contact_number" required>
+       </label>
+       <label>
+       Payment Method:
+       <!--options for payment-->
+      <select name="payment_method" required>
+        <option value="cash">Debit/credit</option>
+        <option value="card">Gift cards</option>
+        <option value="paypal">Cash</option>
+      </select>
+    </label>
+    <input type="submit" value="Continue">
+  </form>
+</body>
+<!--footer goes here-->
+<footer>
+    <p>Thank you, Have a wonderful day ahead</p>
+</footer>
+</html>
